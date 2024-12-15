@@ -180,21 +180,17 @@ body {
   text-align: center;
   background-color: #D8D4FB;
   padding: 1.5rem 1.5rem 0rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  display:block;
+  max-width: 1200px;
+  
   border-radius: 20px;
-}
+} 
 
-.hero_section__box{
+ .hero_section__box{
   display: flex;
   flex-direction: column;
   gap: 10px;
 
-}
-
-.hero_section__powered {
-  font-weight: lighter;
 }
 
 .hero_Section-beta {
@@ -227,13 +223,11 @@ body {
 
 }
 
-.hero_section__btn svg {
-  align-self: center;
-}
 
 .hero_section__mobile_view{
   width:350px;
   margin:0 auto;
+  margin-top:20px;
 
 }
 
@@ -243,6 +237,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+  max-width:75rem;
+  margin: 0 auto;
 }
 
 .food_section__title {
@@ -306,6 +302,9 @@ body {
   flex-direction: column;
   padding: 3rem 1.5rem 1.5rem 1.5rem;
   gap:0.625rem;
+  min-width:0;
+  max-width:900px;
+ 
 }
 
 .travel_section__title{
@@ -323,6 +322,10 @@ body {
   gap: 0.625rem;
   overflow: auto;
   
+  
+  
+  
+  
 }
 .travel_creator__place__box__items{
   width:290px;
@@ -330,6 +333,7 @@ body {
   border-radius: 10px;
   gap: 0.625rem;
   overflow-x: hidden;
+  
 }
 
 .travel_creator__place__box__items img{
@@ -682,56 +686,53 @@ body {
   margin:4px 4px 4px 0px;
   }
 
-  /*hero section*/
+   /*hero section*/
   .hero_section {
     text-align: left;
-    /* background-color: #D8D4FB; */
-    /* padding: 0rem 0rem  0rem 0rem; */
-    /* margin:0rem 1.5rem; */
-    display: flex;
+    background-color: #D8D4FB;
+    padding: 0rem 0rem 0rem 0rem;
+    display:block;
     flex-direction: row;
     gap: 15px;
     border-radius: 20px;
     position: relative;
-  }
-  
-  .hero_section__box{
-    display: flex;
-    gap:0.425rem;
-    position:absolute;
-    width:500px;
-    top:20px;
-    margin:0rem 3rem;
-  }
-  
-  .hero_Section-beta {
-    background-color: #FFFFFF;
-    padding: 7px;
-    margin-left: 2px;
-  }
-  
-  .hero_section__title {
-    font-size: 3.3rem;
-    line-height: 1;
-  }
-  
-  .hero_section__caption {
-    font-size: 1.4rem;
-    line-height: 1.3;
-  }
-  
-  .hero_section__btn {
-    margin:0;
-    width: fit-content;
-  }
-  
-  .hero_section__mobile_view{
-    width:100%;    
-    margin:auto;
-    position: relative;
-    left:50px;
+    overflow: hidden;
   }
 
+  .hero_section__box{
+    position: absolute;
+    z-index: 2;
+    width:400px;
+    top:50px;
+    left:100px;
+  }
+
+  .hero_section__title{
+    font-size: 2.5rem;
+  }
+
+  .hero_section__btn {
+    background-color: #301D49;
+    color: white;
+    display: flex;
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 0.625rem 1rem;
+    text-align: center;
+    margin: 0;
+    width: fit-content;
+  }
+  .hero_section__btn svg{
+    position:relative;
+  }
+
+  .hero_section__mobile_view{
+    position:relative;
+    width:800px;
+    left: 150px;
+    z-index: 0;
+  }
+  
   /*Sponser*/
   .sponser{
     background-color:#F2ECF9;
@@ -945,13 +946,7 @@ body {
   .search_input_box{
     flex-grow: 2;
   }
-  
 
-  
-  
-  
-
-  
   .input_name{
     width:100%;
     border: none;
@@ -985,24 +980,31 @@ body {
     flex-grow: 0;
   }
 
-  /*hero section*/
-  .hero_section {
- 
-    background-color: #D8D4FB; 
-    margin:0 auto;
-    max-width: 1200px; 
-  }
-
   .hero_section {
     text-align: left;
     background-color: #D8D4FB;
-    padding: 1.5rem 1.5rem 0rem 1.5rem;
-    display: flex;
+    padding: 0rem 0rem 0rem 0rem;
+    display:block;
     flex-direction: row;
     gap: 15px;
     border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
   }
-  
+
+  .hero_section__box{
+    position: absolute;
+    z-index: 2;
+    width:400px;
+    top:50px;
+    left:100px;
+  }
+
+  .hero_section__title{
+    font-size: 2.5rem;
+  }
+
   .hero_section__btn {
     background-color: #301D49;
     color: white;
@@ -1013,12 +1015,22 @@ body {
     text-align: center;
     margin: 0;
     width: fit-content;
-  
   }
-
   .hero_section__btn svg{
     position:relative;
+  }
 
+  .hero_section__mobile_view{
+    position:relative;
+    width:800px;
+    left: 150px;
+    z-index: 0;
+  }
+
+  /*food section*/
+  .food_section{
+    
+    
   }
 
 
