@@ -147,6 +147,7 @@ body {
 .search__box {
   border-bottom: 1px solid #c9c9c9;
   display: flex;
+  padding: 0.625rem 0rem;
 }
 
 .search__box input {
@@ -163,13 +164,13 @@ body {
 .search__icon {
   align-self: center;
   margin-right: 0.625rem;
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .search__btn {
   width: 100%;
   background-color: #34E0A1;
-  padding: 0.5rem 0.313rem;
+  padding: 0.625rem 0.313rem;
   border-radius: 1.875rem;
   border: none;
   margin: 1rem 0rem 0.5rem 0rem;
@@ -302,9 +303,7 @@ body {
   flex-direction: column;
   padding: 3rem 1.5rem 1.5rem 1.5rem;
   gap:0.625rem;
-  min-width:0;
-  max-width:900px;
- 
+  
 }
 
 .travel_section__title{
@@ -512,7 +511,7 @@ body {
   background-color:#F2ECF9;
   display: flex;
   flex-direction: column;
-  padding: 3rem 1.5rem 1.5rem 1.5rem;
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -520,6 +519,32 @@ body {
 .sponser__caption{
   padding:1rem 0rem;
   line-height: 1.4;
+}
+
+.sponser__caption__sponser_name_mobile{
+  display: flex;
+  gap:0.625rem;
+  padding:0.623rem 0rem;
+  margin-right:384px;
+  flex-wrap: nowrap;
+}
+
+.sponser__caption__sponser_name_mobile img{
+  flex-grow: 2;
+}
+
+.sponser__caption__sponser_name_mobile__sponsered{
+  flex-grow: 2;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.sponser__caption__sponser_name{
+  display: none ;
+}
+
+.sponsered_by{
+  align-self: center;
 }
 
 .sponser__caption__title{
@@ -670,7 +695,7 @@ body {
   align-self:center;
   margin-left:1rem;
   margin-right: 1rem;
-  padding: 0px 0px 0px 10px;
+  padding: 0px 0px 0px 0px;
  
 }
 
@@ -746,10 +771,16 @@ body {
   }
 
   .sponser__caption__sponser_name{
+    
     display: flex;
     align-items: center;
     justify-content: center;
     gap:0.625rem;
+    
+  }
+
+  .sponser__caption__sponser_name_mobile{
+    display: none;
   }
   
   .sponser__caption{
@@ -834,6 +865,11 @@ body {
   .nav_bar__laptop{
     display: none;
   }
+
+  /*customize*/
+  .sponser__caption__sponser_name{
+    display: none;
+  }
 }
 
 
@@ -860,7 +896,7 @@ body {
 
   .navbar__logo__lap h3{
     align-self: center;
-    font-size:3rem;
+    font-size:2rem;
     font-weight: bold;
   }
 
@@ -903,7 +939,7 @@ body {
     background-color: black;
     color:white ;
     border-radius:30px;
-    padding:0.625rem 1rem;
+    padding:0.425rem 1rem;
 
   }
 
@@ -929,11 +965,11 @@ body {
 
   .search__container {
     border: 1px solid #F0F0F0;
-    padding:0.125rem  0.113rem;
+    padding:0.425rem  0.213rem;
     border-radius: 40px;
     margin: 1.5rem 1.5rem;
     display: flex;
-    width: 70%;
+    width: 50%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
@@ -955,15 +991,15 @@ body {
     flex-grow: 3;
   }
 
-  input[type=text]{
+  /* input[type=text]{
     width:100%;
-  }
+  } */
   
   .search__box input:focus {
     /* outline: none; */
   }
   
-  .search__icon {
+  .search__icon{
     align-self: center;
     margin-left: 0.725rem;
     padding: 0px 0px 0px 0px;
@@ -973,7 +1009,7 @@ body {
   .search__btn {
     width:fit-content;
     background-color: #34E0A1;
-    padding: 0.5rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 1.875rem;
     border: none;
     margin: 0rem 0rem 0rem 0rem;
@@ -1028,15 +1064,213 @@ body {
   }
 
   /*food section*/
-  .food_section{
+
+
+  /*fav travel*/
+  .travel_section{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    gap:0.625rem;
+    /* justify-content: center;
+    align-items: center; */
+    min-width: 0;
+    max-width:1200px;
+    overflow-x: auto;
+    margin: 0 auto;
     
+  }
+  
+  .travel_section__title{
+    font-size: 1.5rem;
+    line-height: 1.2;
+  
+  }
+  
+  .travel_section__caption{
+    line-height: 1.2;
+  }
+  
+  .travel_section__place_container{
+    display: flex;
+    gap: 0.625rem;
+    overflow: auto;
+  }
+
+  .travel_creator__place__box__items{
+    width:290px;
+    height:190px;
+    border-radius: 10px;
+    gap: 0.625rem;
+    overflow-x: hidden;
+  }
+  
+  .travel_creator__place__box__items img{
+    width:100%;
+    height:100%;
+  }
+  
+  .travel_section__place_container__inner_container p{
+    text-align: center;
+  }
+  
+  .travel_section__place_container__inner_container__guid_name{
+    padding: 1rem 0rem;
+  }
+  
+  .travel_section__place_container__inner_container__place_name:hover{
+    text-decoration: underline;
+  }
+
+  /*top experience*/
+
+  .Top_experiences{
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    min-width: 0;
+    max-width:1200px;
+    overflow-x: auto;
+    margin: 0 auto;
     
   }
 
+  /*More to explore*/
+  .more_explore__outerbox{
+    background-color:#F2F1EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+  }
+  .more_explore{
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    
+    min-width: 0;
+    max-width:1200px;
+    overflow-x: auto;
+    margin: 0 auto;
+}
 
+.sponser{
+  background-color:#F2ECF9;
+  display: flex;
+  flex-direction:row;
+  margin:3rem 0rem 0rem 0rem;
+  padding: 1.5rem;
+  justify-content: center;
+  text-align: center;
+  gap:0.625rem;
+  min-width: 0;
+  max-width:1200px;
+  overflow-x: auto;
+  margin: 0 auto;
+}
 
+.sponser__caption__sponser_name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:0.625rem;
+}
 
+.sponser__caption{
+  padding:1rem 0rem;
+  line-height: 1.4;
+  align-self: center;
+}
+
+.sponser__caption__title{
+  font-size: 2rem;
+}
+
+.sponser__caption__para{
+  font-size:1rem;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}
+
+.sponser__caption button{
+  background-color: black;
+  color:white ;
+  border-radius:30px;
+  padding:0.625rem 1rem;
+}
+
+/*footer*/
+.footer{
+  margin:5rem 0rem 0rem 0rem;
+  padding: 1.5rem 1.5rem 0rem 1.5rem;
+  background-color:#F2F2F2;
+}
+.footer__flex-box_1{
+  
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.footer__flex-box_1 li{
+  list-style: none;
+}
+
+.footer__list{
+  padding:1rem 1.5rem;
+}
+
+.footer__flex-box_2__logo{
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  gap:0.625rem;
+}
+
+.footer__flex-box_2__logo svg {
+  align-self: center;
+  
+}
+
+.footer__flex-box_3{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding-right:180px;
+  flex-direction: column;
+  
+}
+
+.footer__flex-box_3__log{
+  display: flex;
+  gap:10px;
+  padding: 0rem 1.5rem;
+  padding-top: 2rem;
+}
+
+.footer__flex-box_3__log small{
+  align-self:left;
+  color:#545454;
+  
+}
+
+.footer__flex-box_3__log__polices{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.footer__flex-box_3__log__polices__name a{
+  color:#545454;
+}
+
+.footer__flex-box_3__log__polices__name__decription{
+  width:700px;
+  margin-right: 50px;
+  font-size:13px;
+}
+
+.sponser__caption__sponser_name_mobile{
+  display:none;
+}
 }
 
 

@@ -226,7 +226,7 @@
             <div class="search__container">
                 <div class="search__box">
                     <i class="fa-solid fa-magnifying-glass search__icon" id="search" style="color: #585858;"></i>
-                    <input type="text" class = "input_name" name="text" placeholder="Places to go, things to do, hotels...">
+                    <input type="text" class = "input_name" name="text" placeholder="Places to go, things to do">
                 </div>
                 <button type=# class="search__btn">Search</button>
             </div>
@@ -465,7 +465,8 @@
         </section>
 
         <!--More to explore-->
-        <section class="more_explore">
+    <section class = "more_explore__outerbox">
+        <div class="more_explore">
             <p class="more_explore__title">More to explore</p>
 
             <div class="more_explore__container">
@@ -539,7 +540,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
         <!--Dream your nxt trip-->
         <section class="food_section">
@@ -582,14 +584,19 @@
 
         <!--sponser-->
         <section class="sponser">
-            
+            <div class = "sponser__caption__sponser_name_mobile">
+                <img src="images/tripadvisor_logo.png" width="25px" height="25px" alt="tripadvisor_logo_sponser">
+                <div class="sponser__caption__sponser_name_mobile__sponsered">
+                    <p class = "sponsered_by">Sponsored by <span class = "sponser_name--underline">Wonderlab</span></p>
+                </div>
+            </div>
 
             <div class="sponser__img_box">
                     <img src="./images/caption(26).jpg" alt="bike_image">
             </div>
 
             <div class="sponser__caption">
-                <div class = "sponser__caption__sponser_name">
+                <div class = "sponser__caption__sponser_name" media = "(min-width:64rem)">
                     <img src="images/tripadvisor_logo.png" width="30px" height="30px" alt="tripadvisor_logo_sponser">
                     <p class = "sponsered_by">Sponsored by <span class = "sponser_name--underline">Wonderlab</span></p>
                 </div>
@@ -643,6 +650,7 @@
             </div>
 
             <div class="footer__flex-box_2__logo">
+                <!--x img-->
 
                 <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="31px" viewBox="0 0 30 30"
@@ -698,7 +706,7 @@
 
             <div class="footer__flex-box_3">
                 <div class="footer__flex-box_3__log">
-                    <img src="images/tripadvisor_logo.png" width="30px" height="30px" alt="tripadvisor_logo">
+                    <img src="images/tripadvisor_logo.png" width="40px" height="40px" alt="tripadvisor_logo">
                     <div class="footer__flex-box_3__log__polices">
                         <small>&copy 2024 Tripadvisor LLC All right reserved. </small>
                         <div class="footer__flex-box_3__log__polices__name">
@@ -711,6 +719,7 @@
                         </div>
                     </div>
                 </div>
+                <small class = "footer__flex-box_3__log__polices__name__decription">This is the version of our website addressed to speakers of English in India. If you are a resident of another country or region, please select the appropriate version of Tripadvisor for your country or region in the drop-down menu. more</small>
             </div>
         </section>
 
