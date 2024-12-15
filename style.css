@@ -600,6 +600,10 @@ body {
   display: none;
 }
 
+.laptop_view_menu__title{
+  display: none;
+}
+
 /*Media queary for tablet*/
 @media screen and (min-width:48rem) and (max-width:63.938rem){
   /*navbar*/
@@ -620,6 +624,10 @@ body {
   }
 
   .navbar{
+    display: none;
+  }
+
+  .laptop_view_menu__title{
     display: none;
   }
 
@@ -861,6 +869,10 @@ body {
     padding:0rem;
   }
 
+  .laptop_view_menu__title{
+    display:block;
+  }
+
   .nav_bar__laptop__menus li{
     list-style-type:none;
     display:flex;
@@ -934,6 +946,9 @@ body {
     flex-grow: 2;
   }
   
+
+  
+  
   
 
   
@@ -972,23 +987,39 @@ body {
 
   /*hero section*/
   .hero_section {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    width: 100vw;
-    height: 100vh; 
-    background-color:white;
-  }
-  
-  .hero_section__innerbox {
-    width: 90%; 
-    max-width: 1200px; 
+ 
     background-color: #D8D4FB; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    padding: 2rem; 
+    margin:0 auto;
+    max-width: 1200px; 
+  }
+
+  .hero_section {
+    text-align: left;
+    background-color: #D8D4FB;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    border-radius: 20px;
   }
   
+  .hero_section__btn {
+    background-color: #301D49;
+    color: white;
+    display: flex;
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 0.625rem 1rem;
+    text-align: center;
+    margin: 0;
+    width: fit-content;
+  
+  }
+
+  .hero_section__btn svg{
+    position:relative;
+
+  }
 
 
 
