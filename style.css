@@ -1064,6 +1064,16 @@ body {
   }
 
   /*food section*/
+  .food_section__box--items {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    /* Ensures the shadow stays inside */
+    border-radius: 8px;
+    /* Optional rounded corners */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  }
 
 
   /*fav travel*/
